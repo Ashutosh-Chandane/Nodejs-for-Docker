@@ -33,7 +33,7 @@ router.get('/StudentInfo', function(req, res) {
     BSON = require('mongodb').pure().BSON,
     assert = require('assert');
 
- MongoClient.connect("mongodb://localhost:27017/StudentInfo", function(err, db) {
+ MongoClient.connect("mongodb://192.168.59.103:8888/StudentInfo", function(err, db) {
  if(!err) {
    console.log("We are connected");
  
@@ -59,7 +59,7 @@ router.get('/StudentInfo/:Name', function(req, res) {
  var Db = require('mongodb').Db,
     MongoClient = require('mongodb').MongoClient;
 
-   MongoClient.connect("mongodb://localhost:27017/test", function(err, db) {
+   MongoClient.connect("mongodb://192.168.59.103:8888/StudentInfo", function(err, db) {
  if(!err) {
    console.log("We are connected");
  
