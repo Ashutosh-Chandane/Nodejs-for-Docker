@@ -37,7 +37,7 @@ router.get('/StudentInfo', function(req, res) {
  if(!err) {
    console.log("We are connected");
  
-var collection = db.collection('furniture');
+var collection = db.collection('StudentInfo');
    // Locate all the entries using find
    collection.find().toArray(function(err, results) {
        console.dir(results);
