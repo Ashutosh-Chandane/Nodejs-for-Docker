@@ -33,7 +33,7 @@ router.get('/StudentInfo', function(req, res) {
     BSON = require('mongodb').pure().BSON,
     assert = require('assert');
 
- MongoClient.connect("mongodb://192.168.59.103:8888/StudentInfo", function(err, db) {
+ MongoClient.connect("mongodb://192.168.59.104:8888/StudentInfo", function(err, db) {
  if(!err) {
    console.log("We are connected");
  
